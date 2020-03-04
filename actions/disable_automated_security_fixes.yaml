@@ -1,0 +1,15 @@
+---
+name: disable_automated_security_fixes
+runner_type: python-script
+description: Disable Automated Security Fixes on the Repo
+enabled: true
+entry_point: disable_automated_security_fixes.py
+parameters:
+  user:
+    type: "string"
+    description: "User / organization name."
+    required: true
+  repo:
+    type: "string"
+    description: "Repository name."
+    required: true
